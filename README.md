@@ -92,6 +92,13 @@ nextjs-shadcn-template/
 
 ## 🚀 部署
 
+### GitHub Pages 自动部署
+项目已配置GitHub Actions CI/CD，自动部署到GitHub Pages：
+
+- ✅ 每次推送到`master`分支会自动触发构建
+- ✅ 构建成功后会自动部署到GitHub Pages
+- 🌐 访问地址: `https://yhisMyLove.github.io/nextjs-shadcn-template`
+
 ### Vercel部署
 1. 推送代码到GitHub
 2. 在Vercel中导入项目
@@ -101,7 +108,7 @@ nextjs-shadcn-template/
 ```bash
 pnpm build
 ```
-构建完成后，将 `.next` 目录部署到任意支持Node.js的平台。
+构建完成后，将 `out` 目录（静态导出）部署到任意静态托管平台。
 
 ## 📚 扩展开发
 
